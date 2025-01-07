@@ -10,7 +10,7 @@ let img = new Image();
 const d = Date();
 
 const prop = {
-  w: window.innerWidth > 500 ? 450 : 350,
+  w: window.innerWidth > 500 ? 450 : 400,
   h: 200,
 };
 
