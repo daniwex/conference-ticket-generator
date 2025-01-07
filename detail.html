@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Confirmation</title>
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="w-2/3">
+        <div class="flex justify-center items-center">
+          <img class="pr-2" src="./assets/images/logo-mark.svg" alt="" />
+          <span>Coding Conf</span>
+        </div>
+        <div class="pt-7">
+          <h1 class="text-center">
+            Congrats, <span id="name"></span> your ticket is ready.
+          </h1>
+          <p class="text-center pt-2 text-grey-400 text-lg">
+            We've emailed your ticket to <span class="text-red" id="email"></span> and will send updates in the run up to the event.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="flex justify-center" id="container">
+        <canvas id="canvas"></canvas>
+    </div>
+        
+    <!-- <div id="container">
+        <img src="/assets/images/pattern-ticket.svg" alt="">
+    </div> -->
+    <script src="/script/detail.js"></script>
+  </body>
+</html>

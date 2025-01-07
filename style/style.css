@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "Inconsolata-VariableFont";
+  src: url("/assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
+}
+body {
+  background: no-repeat url("/assets/images/pattern-lines.svg"),
+    url("/assets/images/background-desktop.png");
+  color: white;
+  height: 100vh;
+  font-family: "Inconsolata-VariableFont";
+  padding: 20px 0;
+}
+:root{
+    --text-grey-400:#d1d0d5;
+    --bg-dark-blue:#0E121B;
+}
+main {
+  width: 100%;
+}
+.text-grey-400 {
+  color:var(--text-grey-400);
+}
+h1 {
+  font-size: 2.2em;
+}
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.p-2 {
+  padding: 20px;
+}
+.pt-2 {
+  padding-top: 20px;
+}
+.pt-7 {
+  padding-top: 70px;
+}
+.pl-2 {
+  padding-left: 20px;
+}
+.pr-2 {
+  padding-right: 20px;
+}
+.w-30 {
+  width: 30%;
+}
+.text-lg {
+  font-size: 1.3em;
+}
+#container {
+  margin-top: 40px;
+}
+form {
+  width: calc(100% - 40px);
+}
+.form-control {
+  display: grid;
+  row-gap: 10px;
+  margin-bottom: 15px;
+}
+.position-relative{
+    position: relative;
+}
+input{
+    color: white
+}
+input[type = "text"], input[type = "email"]{
+    background-color: var(--bg-dark-blue);
+    padding: 10px;
+    border: 1px solid #4B4869;
+    border-radius: .5rem;
+}
+input[type = "text"]::placeholder, input[type = "email"]::placeholder{
+    color: var(--text-grey-400);
+}
+input[type = "file"]{
+    display: none;
+}
+.img-container{
+    height: 30%;
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    background-color: #4B4869;
+    margin-bottom: 10px;
+}
+#avatar-container{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+}
+#name{
+    background: linear-gradient(to right, #F57463, #FFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.file-container{
+    width: 100%;
+    height: 15vh;
+    background-color: var(--bg-dark-blue);
+    border-radius: .5rem;
+    border: 1px dashed var(--text-grey-400)
+}
+.small-text{
+    font-size: x-small;
+}
+.text-red{
+   color:#F57463
+}
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.flex-column{
+    flex-direction: column;
+}
+.grid{
+    display: grid;
+}
+.grid-template-1{
+    grid-template-columns: 5% 95%
+}
+.pt-1{
+    padding-top: 5px;
+}
+#ticketBtn{
+    width: 100%;
+    padding: 10px;
+    border-radius: .5rem;
+    border: none;
+    background-color: #F57463;
+    color: black;
+    font-weight: bold;
+}
+/* Styles for screens between 601px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  /* CSS rules for medium screens */
+}
+
+/* Styles for screens larger than 900px */
+@media (min-width: 901px) {
+  /* CSS rules for large screens */
+  body {
+    background: repeat-x url("/assets/images/pattern-lines.svg"),
+      url("/assets/images/background-desktop.png");
+    color: white;
+    height: 100vh;
+  }
+  .w-2\/3 {
+    width: 40%;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .text-lg {
+    font-size: 1em;
+  }
+  form {
+    width: 30%;
+  }
+}
